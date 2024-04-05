@@ -50,7 +50,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: team-twilio-dev
-                  key: a3b6a715-24da-4152-b907-57d4189c215c
+                  key: twilio_token
 # The ports is a list of tcp ports the pod listens on
           ports:
 # ContainerPort is a specific port the pod listens on

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: prod-stedi-mike
-          image: us-docker.pkg.dev/w09-scrum-team-cit-262/mike-api/stedi-api:latest # This image needs to refer to the NEW Artifact registry repositorry
+          image: gcr.io/cubs-consulting/stedi # This image needs to refer to the NEW Artifact registry repositorry
           env:
             - name: REDIS_PASSWORD
               valueFrom:
@@ -35,7 +35,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: team-twilio-dev
-                  key: a3b6a715-24da-4152-b907-57d4189c215c
+                  key: twilio_token
           ports:
             - containerPort: 443
           resources:
